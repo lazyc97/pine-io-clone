@@ -16,7 +16,8 @@
 		"lafe.contextualduplicate",
 		"sleistner.vscode-fileutils",
 		"christian-kohler.path-intellisense",
-		"blanu.vscode-styled-jsx"
+		"blanu.vscode-styled-jsx",
+		"letrieu.expand-region"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -25,7 +26,7 @@
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "yarn",
 
 	// Uncomment when using a ptrace-based debugger like C++, Go, and Rust
 	// "runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
