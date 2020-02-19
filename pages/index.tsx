@@ -45,7 +45,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </div>
         </header>
         <main className="pb-20 font-sans">
-          <section className="pt-24 h-screen w-screen bg-teal-900">
+          <section className="pt-24 w-screen bg-teal-900">
             <div className="mx-4 text-center">
               <h1 className="mt-3">
                 <span className="text-white font-semibold text-2rem leading-10">Your personal journal.</span>
@@ -65,14 +65,14 @@ class IndexPage extends React.Component<{}, IndexPageState> {
                 <button className="px-8 py-4 rounded-full bg-orange-400 text-xl text-teal-900 font-semibold">Sign Up for Free!</button>
               </a>
             </div>
-            <div className="absolute inset-x-0 bottom-0">
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLjEgNzA5SDE1MjciIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTg4MS40IDY2NS42aC01NDhjLTQ2LjMgMC05MS4zIDE1LjMtMTI4IDQzLjRIOTk4Yy0zMi40LTI4LTczLjgtNDMuNC0xMTYuNi00My40eiIgZmlsbD0iI0Y5QkM2MCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9nPjwvc3ZnPg=="></img>
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMyIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBzdHJva2U9IiNGOUJDNjAiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTEzNTIuNzI0IDY3LjkxOWwyNS4wOC01Mi4yOTkgNTIuMjk4IDI1LjA4LTI1LjA4IDUyLjI5OHoiLz48cGF0aCBzdHJva2U9IiNFMTYxNjIiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTk5LjUgODI1LjFsMzQuMy0zNS41IDE3LjQgMTcuNyIvPjxwYXRoIHN0cm9rZT0iIzdDQzU3QyIgZD0iTTE1NzguNjU2IDc0Mi40ODJsMzYuMjUtMTYuNjc4IDE2LjY3OCAzNi4yNS0zNi4yNSAxNi42Nzh6Ii8+PHBhdGggc3Ryb2tlPSIjRjlCQzYwIiBkPSJNMTU4NCA2NzcuNGw0MiAyNi4zLTIwLjkgMzkuOSIvPjxwYXRoIGQ9Ik0xMzIwIDgxMy45bDQ0LjEtMjAuNyIgc3Ryb2tlPSIjN0NDNTdDIiBzdHJva2Utd2lkdGg9IjUiLz48cGF0aCBkPSJNNTUyLjIgODA3LjNoMzIiIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PC9nPjwvc3ZnPg=="></img>
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjRjU4QTZDIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xMzIzLjM4NiA1MDIuNDY3bDk3LjA4NS0yOC45MjIgMjguOTIyIDk3LjA4Ni05Ny4wODYgMjguOTIxeiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2MiAzMSkiPjxjaXJjbGUgc3Ryb2tlPSIjRTE2MTYyIiBzdHJva2Utd2lkdGg9IjUiIGN4PSIyNi4yIiBjeT0iMjYuMyIgcj0iMjYuMiIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTIxLjY5NSAyOS45NmwzNi4yNS0xNi42NzkgMTYuNjc4IDM2LjI1LTM2LjI1IDE2LjY3OHoiLz48L2c+PHBhdGggZD0iTTI2NC42IDM0MS4zbC0yNS40LTIwLjQiIHN0cm9rZT0iIzdDQzU3QyIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTM4My43MTggOTAuMzIxbDguNzEyLTM0LjAwMiAzNC4wMDIgOC43MTItOC43MTIgMzQuMDAyeiIvPjwvZz48L3N2Zz4="></img>
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBmaWxsPSIjQTNBOEQ0IiBjeD0iMTE3Ny42IiBjeT0iMzYyLjUiIHI9IjYxLjkiLz48Y2lyY2xlIGZpbGw9IiNGOUJDNjAiIGN4PSIxMjIzLjUiIGN5PSIxNTEuMSIgcj0iMzIuNSIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGQ9Ik0xMTUuNTcgMTY3LjkxbDM5LjExMi0xMC4xMiAxMC4xMiAzOS4xMTEtMzkuMTExIDEwLjEyeiIvPjwvZz48L3N2Zz4="></img>
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTE0MDMuNjI0IDM3MC4yNjhsMTQzLjg1Ni00Mi44NTMgNDIuODUzIDE0My44NTYtMTQzLjg1NiA0Mi44NTN6Ii8+PHBhdGggZmlsbD0iIzdDQzU3QyIgZD0iTTc0Ny45IDgxMS44bDc5LjcgMzQuNiA1LjUtNzguMXoiLz48cGF0aCBmaWxsPSIjRjlCQzYwIiBkPSJNOTMzLjcgMTA2LjlsNzAuMiA5NCA0OS4yLTM2LjggNjUuOCA4Ny45LTEwNS44IDc5LjEtMTM2LTE4MS45eiIvPjwvZz48L3N2Zz4="></img>
-              <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTEwMTUuMDA1IDYyNS42MmwxNzYuOTItNTIuNzA0IDUyLjcwNCAxNzYuOTItMTc2LjkyIDUyLjcwNHoiLz48cGF0aCBmaWxsPSIjRTdFQUY2IiBkPSJNNDY0LjggMjE5LjdsLTc0LjMgMTQxLjIgMTQyLjMgMjAuNnoiLz48cGF0aCBmaWxsPSIjRThFNEU2IiBkPSJNNjcyLjkyNiA2OS40MjFsMjMyLjctNjkuMzIgNjkuMzE5IDIzMi43LTIzMi43IDY5LjMyeiIvPjwvZz48L3N2Zz4="></img>
-              <img className="w-3/2" src="https://pine.io/static/pine-app-header-0d498817fa121c2506e3b61580d2b31e.svg"></img>
+            <div className="mt-24 pb-p65 w-p150 relative h-auto" style={{transform: 'translateX(-10%)'}}>
+              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLjEgNzA5SDE1MjciIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTg4MS40IDY2NS42aC01NDhjLTQ2LjMgMC05MS4zIDE1LjMtMTI4IDQzLjRIOTk4Yy0zMi40LTI4LTczLjgtNDMuNC0xMTYuNi00My40eiIgZmlsbD0iI0Y5QkM2MCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9nPjwvc3ZnPg=="></img>
+              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMyIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBzdHJva2U9IiNGOUJDNjAiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTEzNTIuNzI0IDY3LjkxOWwyNS4wOC01Mi4yOTkgNTIuMjk4IDI1LjA4LTI1LjA4IDUyLjI5OHoiLz48cGF0aCBzdHJva2U9IiNFMTYxNjIiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTk5LjUgODI1LjFsMzQuMy0zNS41IDE3LjQgMTcuNyIvPjxwYXRoIHN0cm9rZT0iIzdDQzU3QyIgZD0iTTE1NzguNjU2IDc0Mi40ODJsMzYuMjUtMTYuNjc4IDE2LjY3OCAzNi4yNS0zNi4yNSAxNi42Nzh6Ii8+PHBhdGggc3Ryb2tlPSIjRjlCQzYwIiBkPSJNMTU4NCA2NzcuNGw0MiAyNi4zLTIwLjkgMzkuOSIvPjxwYXRoIGQ9Ik0xMzIwIDgxMy45bDQ0LjEtMjAuNyIgc3Ryb2tlPSIjN0NDNTdDIiBzdHJva2Utd2lkdGg9IjUiLz48cGF0aCBkPSJNNTUyLjIgODA3LjNoMzIiIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PC9nPjwvc3ZnPg=="></img>
+              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjRjU4QTZDIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xMzIzLjM4NiA1MDIuNDY3bDk3LjA4NS0yOC45MjIgMjguOTIyIDk3LjA4Ni05Ny4wODYgMjguOTIxeiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2MiAzMSkiPjxjaXJjbGUgc3Ryb2tlPSIjRTE2MTYyIiBzdHJva2Utd2lkdGg9IjUiIGN4PSIyNi4yIiBjeT0iMjYuMyIgcj0iMjYuMiIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTIxLjY5NSAyOS45NmwzNi4yNS0xNi42NzkgMTYuNjc4IDM2LjI1LTM2LjI1IDE2LjY3OHoiLz48L2c+PHBhdGggZD0iTTI2NC42IDM0MS4zbC0yNS40LTIwLjQiIHN0cm9rZT0iIzdDQzU3QyIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTM4My43MTggOTAuMzIxbDguNzEyLTM0LjAwMiAzNC4wMDIgOC43MTItOC43MTIgMzQuMDAyeiIvPjwvZz48L3N2Zz4="></img>
+              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBmaWxsPSIjQTNBOEQ0IiBjeD0iMTE3Ny42IiBjeT0iMzYyLjUiIHI9IjYxLjkiLz48Y2lyY2xlIGZpbGw9IiNGOUJDNjAiIGN4PSIxMjIzLjUiIGN5PSIxNTEuMSIgcj0iMzIuNSIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGQ9Ik0xMTUuNTcgMTY3LjkxbDM5LjExMi0xMC4xMiAxMC4xMiAzOS4xMTEtMzkuMTExIDEwLjEyeiIvPjwvZz48L3N2Zz4="></img>
+              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTE0MDMuNjI0IDM3MC4yNjhsMTQzLjg1Ni00Mi44NTMgNDIuODUzIDE0My44NTYtMTQzLjg1NiA0Mi44NTN6Ii8+PHBhdGggZmlsbD0iIzdDQzU3QyIgZD0iTTc0Ny45IDgxMS44bDc5LjcgMzQuNiA1LjUtNzguMXoiLz48cGF0aCBmaWxsPSIjRjlCQzYwIiBkPSJNOTMzLjcgMTA2LjlsNzAuMiA5NCA0OS4yLTM2LjggNjUuOCA4Ny45LTEwNS44IDc5LjEtMTM2LTE4MS45eiIvPjwvZz48L3N2Zz4="></img>
+              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTEwMTUuMDA1IDYyNS42MmwxNzYuOTItNTIuNzA0IDUyLjcwNCAxNzYuOTItMTc2LjkyIDUyLjcwNHoiLz48cGF0aCBmaWxsPSIjRTdFQUY2IiBkPSJNNDY0LjggMjE5LjdsLTc0LjMgMTQxLjIgMTQyLjMgMjAuNnoiLz48cGF0aCBmaWxsPSIjRThFNEU2IiBkPSJNNjcyLjkyNiA2OS40MjFsMjMyLjctNjkuMzIgNjkuMzE5IDIzMi43LTIzMi43IDY5LjMyeiIvPjwvZz48L3N2Zz4="></img>
+              <img className="w-3/2 absolute z-30" src="https://pine.io/static/pine-app-header-0d498817fa121c2506e3b61580d2b31e.svg"></img>
             </div>
           </section>
           <section className="px-4 mt-24">
@@ -93,16 +93,25 @@ class IndexPage extends React.Component<{}, IndexPageState> {
               <h3 className="font-bold leading-relaxed text-3xl">Write with Pine.</h3>
               <h5 className="mt-3 opacity-75 leading-tight">Pine notes are simple to use, elegant and powerful.</h5>
             </div>
-            <div className="mt-12 text-center">
-              <h5>Simple yet powerful</h5>
+            <div className="mt-8 text-center">
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Simple yet powerful</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Pine Notes are simple enough for quick memos, yet powerful enough to write a novel.</p>
             </div>
-            <div className="mt-8 text-center">
-              <h5>Version control</h5>
+            <div className="mt-12 text-center">
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Version control</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Save a version of your work at any point in time. Never lose it.</p>
             </div>
-            <div className="mt-8 text-center">
-              <h5>Share your notes</h5>
+            <div className="mt-12 text-center">
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+              </div>
+              <h5 className="mt-4">Share your notes</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Pine lets you share your notes with a simple weblink. Get your writing online with a single click, keep it updated automatically.</p>
             </div>
             <div className="mt-8 flex justify-center">
@@ -115,11 +124,17 @@ class IndexPage extends React.Component<{}, IndexPageState> {
               <h5 className="mt-3 opacity-75 leading-tight">Your todo list always nearby</h5>
             </div>
             <div className="mt-12 text-center">
-              <h5>Pine Todos are everything you hope they'd be.</h5>
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Pine Todos are everything you hope they'd be.</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Dates, recurrences, colored labels, tags, comments, smart parsing, they have the lot!</p>
             </div>
             <div className="mt-8 text-center">
-              <h5>Share your progress</h5>
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Share your progress</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Keep your friends updated, share your project's to-do list with everyone involved, they'll see the progress live</p>
             </div>
             <div className="mt-8 flex justify-center">
@@ -132,11 +147,17 @@ class IndexPage extends React.Component<{}, IndexPageState> {
               <h5 className="mt-3 opacity-75 leading-tight">Developing new habits can be hard. Pine makes it easy.</h5>
             </div>
             <div className="mt-12 text-center">
-              <h5>Like recurring todos on steroids</h5>
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Like recurring todos on steroids</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Pine Habits track your streaks and other stats, let you leave comments and measure every session.</p>
             </div>
             <div className="mt-8 text-center">
-              <h5>Track progress</h5>
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Track progress</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Create custom trackers for any habit, measure your progress for anything.</p>
             </div>
             <div className="mt-8 flex justify-center">
@@ -149,15 +170,24 @@ class IndexPage extends React.Component<{}, IndexPageState> {
               <h5 className="mt-3 opacity-75 leading-tight">Organize, bookmark, upload.</h5>
             </div>
             <div className="mt-12 text-center">
-              <h5>Organize in Space and Time</h5>
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Organize in Space and Time</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Use Boards to drag-and-drop your content close together. All your work is recorded in a timeline so that you could see what you did in the past and what you'll need to do today and in the future</p>
             </div>
             <div className="mt-8 text-center">
-              <h5>Bookmark websites</h5>
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">Bookmark websites</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Keep the links you want to bookmark together with your projects.</p>
             </div>
             <div className="mt-8 text-center">
-              <h5>File upload</h5>
+              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+              </div>
+              <h5 className="mt-4">File upload</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Upload files, keep them close to your work and preview all media directly in Pine!</p>
             </div>
             <div className="mt-8 flex justify-center">

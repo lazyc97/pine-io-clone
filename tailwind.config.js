@@ -4,6 +4,9 @@ module.exports = {
       borderRadius: {
         '2xl': '2rem',
       },
+      fill: {
+        'none': 'none',
+      },
       lineHeight: {
         tighter: '1.125',
         '1.2rem': '1.2rem',
@@ -17,6 +20,11 @@ module.exports = {
       },
       fontSize: {
         '2rem': '2rem',
+      },
+      spacing: {
+        'p50': '50%',
+        'p65': '65%',
+        'p150': '150%',
       },
     },
   },
