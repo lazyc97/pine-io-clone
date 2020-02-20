@@ -2,6 +2,7 @@ import React from "react";
 
 type IndexPageState = {
   passedHero: boolean;
+  menuOpen: boolean;
 };
 
 function handleScrollFunc(page: IndexPage) {
@@ -17,6 +18,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
     super(props);
     this.state = {
       passedHero: false,
+      menuOpen: false,
     };
   }
 
@@ -28,9 +30,31 @@ class IndexPage extends React.Component<{}, IndexPageState> {
     window.removeEventListener('scroll', handleScrollFunc(this));
   }
 
+  clickMemuButton() {
+    this.setState({
+      menuOpen: !this.state.menuOpen,
+    })
+    console.log(this.state);
+  }
+
   render() {
     return (
       <div className="min-h-screen max-h-screen">
+        <div className={'p-4 w-full h-full fixed z-50 bg-gray-900 ' + (this.state.menuOpen ? '' : 'hidden')}>
+          <button className="p-2 flex items-center" onClick={() => this.clickMemuButton()}>
+            <svg className="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <div className="text-white text-3xl">
+            <a aria-current="page" className="block" href="/">Home</a>
+            <a className="block mt-4" href="https://pine.io/blog">Blog</a>
+            <a className="block mt-4" href="https://pine.io/changelog">Changelog</a>
+            <a className="block mt-4" href="https://pine.io/pricing">Pricing</a>
+          </div>
+          <div className="absolute b-4">
+            <button className="px-6 py-3 rounded-full text-white text-2xl leading-tighter border border-white">Log in</button>
+            <button className="ml-4 px-6 py-3 rounded-full text-white text-2xl leading-tighter bg-red-500">Sign Up</button>
+          </div>
+        </div>
         <header className={'w-full z-40 fixed top-0 ' + (this.state.passedHero ? 'bg-white' : 'bg-transparent')}>
           <div className={'h-20 flex items-center ' + (this.state.passedHero ? 'border-b border-gray-300' : '')}>
             <div className="flex ml-4 mr-5 w-full justify-between">
@@ -38,9 +62,9 @@ class IndexPage extends React.Component<{}, IndexPageState> {
                 <svg className={'fill-current ' + (this.state.passedHero ? 'text-teal-900' : 'text-white')} width="18.04" height="20" viewBox="0 0 352 390" xmlns="http://www.w3.org/2000/svg"><path d="M332.444 312c-69.05 0-126.152-51.285-135.422-117.624C221.78 218.848 255.806 234 293.333 234c10.795 0 19.556-8.716 19.556-19.5s-8.761-19.5-19.556-19.5c-53.914 0-97.777-43.738-97.777-97.5v-.507C211.943 109.375 232.124 117 254.222 117c10.795 0 19.556-8.716 19.556-19.5S265.017 78 254.222 78c-32.345 0-58.666-26.247-58.666-58.5C195.556 8.716 186.795 0 176 0c-10.795 0-19.556 8.716-19.556 19.5 0 32.253-26.321 58.5-58.666 58.5-10.795 0-19.556 8.716-19.556 19.5S86.983 117 97.778 117c22.098 0 42.279-7.625 58.666-20.007v.507c0 53.762-43.863 97.5-97.777 97.5-10.795 0-19.556 8.716-19.556 19.5S47.872 234 58.667 234c37.527 0 71.553-15.151 96.31-39.624C145.709 260.715 88.608 312 19.557 312 8.76 312 0 320.716 0 331.5S8.76 351 19.556 351c55.264 0 104.602-25.584 136.888-65.442V370.5c0 10.784 8.761 19.5 19.556 19.5 10.795 0 19.556-8.716 19.556-19.5v-84.942C227.842 325.416 277.18 351 332.444 351 343.24 351 352 342.284 352 331.5s-8.76-19.5-19.556-19.5z"></path></svg>
                 <h1 className={'ml-2 ' + (this.state.passedHero ? 'text-teal-900' : 'text-white')}>Pine</h1>
               </a>
-              <div className="flex items-center">
+              <button className="p-2 flex items-center" onClick={() => this.clickMemuButton()}>
                 <svg className={this.state.passedHero ? 'text-teal-900' : 'text-white'} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-              </div>
+              </button>
             </div>
           </div>
         </header>
@@ -125,14 +149,14 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             </div>
             <div className="mt-12 text-center">
               <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
               </div>
               <h5 className="mt-4">Pine Todos are everything you hope they'd be.</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Dates, recurrences, colored labels, tags, comments, smart parsing, they have the lot!</p>
             </div>
             <div className="mt-8 text-center">
               <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
               </div>
               <h5 className="mt-4">Share your progress</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Keep your friends updated, share your project's to-do list with everyone involved, they'll see the progress live</p>
@@ -148,14 +172,14 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             </div>
             <div className="mt-12 text-center">
               <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
               </div>
               <h5 className="mt-4">Like recurring todos on steroids</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Pine Habits track your streaks and other stats, let you leave comments and measure every session.</p>
             </div>
             <div className="mt-8 text-center">
               <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
               </div>
               <h5 className="mt-4">Track progress</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Create custom trackers for any habit, measure your progress for anything.</p>
@@ -171,21 +195,21 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             </div>
             <div className="mt-12 text-center">
               <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
               </div>
               <h5 className="mt-4">Organize in Space and Time</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Use Boards to drag-and-drop your content close together. All your work is recorded in a timeline so that you could see what you did in the past and what you'll need to do today and in the future</p>
             </div>
             <div className="mt-8 text-center">
               <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
               </div>
               <h5 className="mt-4">Bookmark websites</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Keep the links you want to bookmark together with your projects.</p>
             </div>
             <div className="mt-8 text-center">
               <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
               </div>
               <h5 className="mt-4">File upload</h5>
               <p className="mt-4 opacity-50 leading-relaxed">Upload files, keep them close to your work and preview all media directly in Pine!</p>
