@@ -39,20 +39,22 @@ class IndexPage extends React.Component<{}, IndexPageState> {
 
   render() {
     return (
-      <div className="min-h-screen max-h-screen">
-        <div className={'p-4 w-full h-full fixed z-50 bg-gray-900 ' + (this.state.menuOpen ? '' : 'hidden')}>
-          <button className="p-2 flex items-center" onClick={() => this.clickMemuButton()}>
+      <div className="h-screen">
+        <div className={'w-full h-full fixed z-50 bg-gray-900 ' + (this.state.menuOpen ? '' : 'hidden')}>
+          <button className="m-4 p-2 absolute top-0 right-0 flex items-center" onClick={() => this.clickMemuButton()}>
             <svg className="text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
           </button>
-          <div className="text-white text-3xl">
-            <a aria-current="page" className="block" href="/">Home</a>
-            <a className="block mt-4" href="https://pine.io/blog">Blog</a>
-            <a className="block mt-4" href="https://pine.io/changelog">Changelog</a>
-            <a className="block mt-4" href="https://pine.io/pricing">Pricing</a>
-          </div>
-          <div className="absolute b-4">
-            <button className="px-6 py-3 rounded-full text-white text-2xl leading-tighter border border-white">Log in</button>
-            <button className="ml-4 px-6 py-3 rounded-full text-white text-2xl leading-tighter bg-red-500">Sign Up</button>
+          <div className="pt-12 pb-5 px-5 h-full flex flex-col">
+            <div className="flex-grow text-white text-3xl">
+              <a aria-current="page" className="block" href="/">Home</a>
+              <a className="block mt-4" href="https://pine.io/blog">Blog</a>
+              <a className="block mt-4" href="https://pine.io/changelog">Changelog</a>
+              <a className="block mt-4" href="https://pine.io/pricing">Pricing</a>
+            </div>
+            <div>
+              <button className="px-6 py-3 rounded-full text-white text-2xl leading-tighter border border-gray-600">Log in</button>
+              <button className="ml-4 px-6 py-3 rounded-full text-white text-2xl leading-tighter bg-red-500">Sign Up</button>
+            </div>
           </div>
         </div>
         <header className={'w-full z-40 fixed top-0 ' + (this.state.passedHero ? 'bg-white' : 'bg-transparent')}>
@@ -241,34 +243,36 @@ class IndexPage extends React.Component<{}, IndexPageState> {
                 </p>
             </div>
           </section>
-          <section className="px-4 mt-24">
-            <div>
-              <h3 className="text-center font-bold leading-relaxed text-3xl">Sign up Today!</h3>
-              <h5 className="mt-3 opacity-75 text-center leading-relaxed">
-                Pine is currently in an open Beta.
-                <br />
-                Sign up to try it out before the official release!
-              </h5>
-              <div className="flex justify-center">
-                <button className="py-4 px-8 mt-8 flex items-center leading-tight rounded-2xl opacity-75 bg-red-700 text-white font-medium">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.8 10H12v4h5.7c-.8 2.3-3 4-5.7 4-3.3 0-6-2.7-6-6s2.7-6 6-6c1.7 0 3.2.7 4.2 1.8L19 5c-1.7-1.9-4.2-3-7-3C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10c0-.7-.1-1.4-.2-2z"></path></svg>
-                  <span className="ml-2">Sign up with Google</span>
-                </button>
+          <section className="mt-24 sm:flex sm:justify-center">
+            <div className="px-4 sm:px-8 sm:py-12 sm:max-w-lg sm:shadow-2xl sm:rounded-2xl">
+              <div>
+                <h3 className="text-center font-bold leading-relaxed text-3xl sm:text-2.5rem">Sign up Today!</h3>
+                <h5 className="mt-3 opacity-75 text-center leading-relaxed">
+                  Pine is currently in an open Beta.
+                  <br />
+                  Sign up to try it out before the official release!
+                </h5>
+                <div className="flex justify-center">
+                  <button className="py-4 px-8 mt-8 flex items-center leading-tight rounded-2xl opacity-75 bg-red-700 text-white font-medium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.8 10H12v4h5.7c-.8 2.3-3 4-5.7 4-3.3 0-6-2.7-6-6s2.7-6 6-6c1.7 0 3.2.7 4.2 1.8L19 5c-1.7-1.9-4.2-3-7-3C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10c0-.7-.1-1.4-.2-2z"></path></svg>
+                    <span className="ml-2">Sign up with Google</span>
+                  </button>
+                </div>
               </div>
+              <div className="mt-8 flex justify-center opacity-50 text-gray-900">
+                <span>- OR -</span>
+              </div>
+              <form className="mt-8">
+                <input className="p-4 w-full rounded-lg bg-gray-200 focus:border-2 focus:border-blue-800" placeholder="Email" />
+                <input className="mt-8 p-4 w-full rounded-lg bg-gray-200 focus:border-2 focus:border-blue-800" placeholder="Password" />
+                <div className="flex justify-center">
+                  <button className="mt-8 py-4 px-8 mt-8 text-center leading-tight rounded-2xl opacity-75 bg-red-700 text-white font-medium">Sign up with Google</button>
+                </div>
+                <div className="mt-8 mx-8 text-xs text-gray-900 leading-tighter opacity-50">
+                  By clicking “Sign up with Google/Email” above, you acknowledge that you have read and understood, and agree to Pine's <a className="underline" href="https://pine.io/terms-and-conditions" target="_blank">Terms and Conditions</a> and <a className="text-blue-500" href="https://pine.io/privacy-policy" target="_blank">Privacy Policy</a>.
+                </div>
+              </form>
             </div>
-            <div className="mt-8 flex justify-center opacity-50 text-gray-900">
-              <span>- OR -</span>
-            </div>
-            <form className="mt-8">
-              <input className="p-4 w-full rounded-lg bg-gray-200 focus:border-2 focus:border-blue-800" placeholder="Email" />
-              <input className="mt-8 p-4 w-full rounded-lg bg-gray-200 focus:border-2 focus:border-blue-800" placeholder="Password" />
-              <div className="flex justify-center">
-                <button className="mt-8 py-4 px-8 mt-8 text-center leading-tight rounded-2xl opacity-75 bg-red-700 text-white font-medium">Sign up with Google</button>
-              </div>
-              <div className="mt-8 mx-8 text-xs text-gray-900 leading-tighter opacity-50">
-                By clicking “Sign up with Google/Email” above, you acknowledge that you have read and understood, and agree to Pine's <a className="underline" href="https://pine.io/terms-and-conditions" target="_blank">Terms and Conditions</a> and <a className="text-blue-500" href="https://pine.io/privacy-policy" target="_blank">Privacy Policy</a>.
-              </div>
-            </form>
           </section>
         </main>
         <footer className="px-12 pt-8 pb-16 flex flex-col flex-wrap bg-gray-900 text-white">

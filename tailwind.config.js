@@ -20,6 +20,7 @@ module.exports = {
       },
       fontSize: {
         '2rem': '2rem',
+        '2.5rem': '2.5rem',
       },
       spacing: {
         'p50': '50%',
