@@ -79,40 +79,42 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </div>
         </header>
         <main className="pb-20 font-sans">
-          <section className="pt-24 w-screen bg-teal-900">
-            <div className="mx-4 text-center">
-              <h1 className="mt-3">
-                <span className="text-white font-semibold text-2rem leading-10">Your personal journal.</span>
-                <br />
-                <span className="text-white text-2rem leading-10">Everywhere.</span>
-              </h1>
-              <h2 className="mt-3 text-white leading-7 font-light opacity-75">
-                Keep notes, write prose, track habits,
-                <br />
-                tasks, and bookmarks. Organize your life.
-                <br />
-                All in one beautiful app.
-              </h2>
+          <section className="pt-24 sm:pt-0 sm:h-screen-4/5 w-screen bg-teal-900">
+            <div className="h-full sm:ml-4 sm:flex sm:items-center">
+              <div className="mx-4 text-center sm:text-left z-10">
+                <h1 className="mt-3 sm:leading-15">
+                  <span className="text-white font-semibold text-2rem sm:text-5xl leading-10">Your personal journal.</span>
+                  <br />
+                  <span className="text-white text-2rem sm:text-5xl leading-10">Everywhere.</span>
+                </h1>
+                <h2 className="mt-3 text-white leading-7 sm:leading-9 font-light sm:text-xl opacity-75">
+                  Keep notes, write prose, track habits,
+                  <br />
+                  tasks, and bookmarks. Organize your life.
+                  <br />
+                  All in one beautiful app.
+                </h2>
+                <div className="mt-8 flex justify-center sm:justify-start">
+                  <a href="#signup" className="px-8 py-4 rounded-full bg-orange-400 text-xl text-teal-900 font-semibold">Sign Up for Free!</a>
+                </div>
+              </div>
             </div>
-            <div className="mt-8 flex justify-center">
-              <a href="#signup">
-                <button className="px-8 py-4 rounded-full bg-orange-400 text-xl text-teal-900 font-semibold">Sign Up for Free!</button>
-              </a>
-            </div>
-            <div className="mt-24 pb-p65 w-p150 relative h-auto" style={{transform: 'translateX(-10%)'}}>
-              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLjEgNzA5SDE1MjciIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTg4MS40IDY2NS42aC01NDhjLTQ2LjMgMC05MS4zIDE1LjMtMTI4IDQzLjRIOTk4Yy0zMi40LTI4LTczLjgtNDMuNC0xMTYuNi00My40eiIgZmlsbD0iI0Y5QkM2MCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9nPjwvc3ZnPg=="></img>
-              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMyIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBzdHJva2U9IiNGOUJDNjAiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTEzNTIuNzI0IDY3LjkxOWwyNS4wOC01Mi4yOTkgNTIuMjk4IDI1LjA4LTI1LjA4IDUyLjI5OHoiLz48cGF0aCBzdHJva2U9IiNFMTYxNjIiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTk5LjUgODI1LjFsMzQuMy0zNS41IDE3LjQgMTcuNyIvPjxwYXRoIHN0cm9rZT0iIzdDQzU3QyIgZD0iTTE1NzguNjU2IDc0Mi40ODJsMzYuMjUtMTYuNjc4IDE2LjY3OCAzNi4yNS0zNi4yNSAxNi42Nzh6Ii8+PHBhdGggc3Ryb2tlPSIjRjlCQzYwIiBkPSJNMTU4NCA2NzcuNGw0MiAyNi4zLTIwLjkgMzkuOSIvPjxwYXRoIGQ9Ik0xMzIwIDgxMy45bDQ0LjEtMjAuNyIgc3Ryb2tlPSIjN0NDNTdDIiBzdHJva2Utd2lkdGg9IjUiLz48cGF0aCBkPSJNNTUyLjIgODA3LjNoMzIiIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PC9nPjwvc3ZnPg=="></img>
-              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjRjU4QTZDIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xMzIzLjM4NiA1MDIuNDY3bDk3LjA4NS0yOC45MjIgMjguOTIyIDk3LjA4Ni05Ny4wODYgMjguOTIxeiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2MiAzMSkiPjxjaXJjbGUgc3Ryb2tlPSIjRTE2MTYyIiBzdHJva2Utd2lkdGg9IjUiIGN4PSIyNi4yIiBjeT0iMjYuMyIgcj0iMjYuMiIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTIxLjY5NSAyOS45NmwzNi4yNS0xNi42NzkgMTYuNjc4IDM2LjI1LTM2LjI1IDE2LjY3OHoiLz48L2c+PHBhdGggZD0iTTI2NC42IDM0MS4zbC0yNS40LTIwLjQiIHN0cm9rZT0iIzdDQzU3QyIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTM4My43MTggOTAuMzIxbDguNzEyLTM0LjAwMiAzNC4wMDIgOC43MTItOC43MTIgMzQuMDAyeiIvPjwvZz48L3N2Zz4="></img>
-              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBmaWxsPSIjQTNBOEQ0IiBjeD0iMTE3Ny42IiBjeT0iMzYyLjUiIHI9IjYxLjkiLz48Y2lyY2xlIGZpbGw9IiNGOUJDNjAiIGN4PSIxMjIzLjUiIGN5PSIxNTEuMSIgcj0iMzIuNSIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGQ9Ik0xMTUuNTcgMTY3LjkxbDM5LjExMi0xMC4xMiAxMC4xMiAzOS4xMTEtMzkuMTExIDEwLjEyeiIvPjwvZz48L3N2Zz4="></img>
-              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTE0MDMuNjI0IDM3MC4yNjhsMTQzLjg1Ni00Mi44NTMgNDIuODUzIDE0My44NTYtMTQzLjg1NiA0Mi44NTN6Ii8+PHBhdGggZmlsbD0iIzdDQzU3QyIgZD0iTTc0Ny45IDgxMS44bDc5LjcgMzQuNiA1LjUtNzguMXoiLz48cGF0aCBmaWxsPSIjRjlCQzYwIiBkPSJNOTMzLjcgMTA2LjlsNzAuMiA5NCA0OS4yLTM2LjggNjUuOCA4Ny45LTEwNS44IDc5LjEtMTM2LTE4MS45eiIvPjwvZz48L3N2Zz4="></img>
-              <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTEwMTUuMDA1IDYyNS42MmwxNzYuOTItNTIuNzA0IDUyLjcwNCAxNzYuOTItMTc2LjkyIDUyLjcwNHoiLz48cGF0aCBmaWxsPSIjRTdFQUY2IiBkPSJNNDY0LjggMjE5LjdsLTc0LjMgMTQxLjIgMTQyLjMgMjAuNnoiLz48cGF0aCBmaWxsPSIjRThFNEU2IiBkPSJNNjcyLjkyNiA2OS40MjFsMjMyLjctNjkuMzIgNjkuMzE5IDIzMi43LTIzMi43IDY5LjMyeiIvPjwvZz48L3N2Zz4="></img>
-              <img className="w-3/2 absolute z-30" src="https://pine.io/static/pine-app-header-0d498817fa121c2506e3b61580d2b31e.svg"></img>
+            <div className="h-0 relative bottom-0 inset-x-0">
+              <div className="w-3/2 transform -translate-y-p84">
+                <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNLjEgNzA5SDE1MjciIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZD0iTTg4MS40IDY2NS42aC01NDhjLTQ2LjMgMC05MS4zIDE1LjMtMTI4IDQzLjRIOTk4Yy0zMi40LTI4LTczLjgtNDMuNC0xMTYuNi00My40eiIgZmlsbD0iI0Y5QkM2MCIgZmlsbC1ydWxlPSJub256ZXJvIi8+PC9nPjwvc3ZnPg=="></img>
+                <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMyIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBzdHJva2U9IiNGOUJDNjAiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTEzNTIuNzI0IDY3LjkxOWwyNS4wOC01Mi4yOTkgNTIuMjk4IDI1LjA4LTI1LjA4IDUyLjI5OHoiLz48cGF0aCBzdHJva2U9IiNFMTYxNjIiIHN0cm9rZS13aWR0aD0iNSIgZD0iTTk5LjUgODI1LjFsMzQuMy0zNS41IDE3LjQgMTcuNyIvPjxwYXRoIHN0cm9rZT0iIzdDQzU3QyIgZD0iTTE1NzguNjU2IDc0Mi40ODJsMzYuMjUtMTYuNjc4IDE2LjY3OCAzNi4yNS0zNi4yNSAxNi42Nzh6Ii8+PHBhdGggc3Ryb2tlPSIjRjlCQzYwIiBkPSJNMTU4NCA2NzcuNGw0MiAyNi4zLTIwLjkgMzkuOSIvPjxwYXRoIGQ9Ik0xMzIwIDgxMy45bDQ0LjEtMjAuNyIgc3Ryb2tlPSIjN0NDNTdDIiBzdHJva2Utd2lkdGg9IjUiLz48cGF0aCBkPSJNNTUyLjIgODA3LjNoMzIiIHN0cm9rZT0iI0Y5QkM2MCIgc3Ryb2tlLXdpZHRoPSI1Ii8+PC9nPjwvc3ZnPg=="></img>
+                <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjRjU4QTZDIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0xMzIzLjM4NiA1MDIuNDY3bDk3LjA4NS0yOC45MjIgMjguOTIyIDk3LjA4Ni05Ny4wODYgMjguOTIxeiIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI2MiAzMSkiPjxjaXJjbGUgc3Ryb2tlPSIjRTE2MTYyIiBzdHJva2Utd2lkdGg9IjUiIGN4PSIyNi4yIiBjeT0iMjYuMyIgcj0iMjYuMiIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGZpbGwtcnVsZT0ibm9uemVybyIgZD0iTTIxLjY5NSAyOS45NmwzNi4yNS0xNi42NzkgMTYuNjc4IDM2LjI1LTM2LjI1IDE2LjY3OHoiLz48L2c+PHBhdGggZD0iTTI2NC42IDM0MS4zbC0yNS40LTIwLjQiIHN0cm9rZT0iIzdDQzU3QyIgc3Ryb2tlLXdpZHRoPSI1Ii8+PHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTM4My43MTggOTAuMzIxbDguNzEyLTM0LjAwMiAzNC4wMDIgOC43MTItOC43MTIgMzQuMDAyeiIvPjwvZz48L3N2Zz4="></img>
+                <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PGNpcmNsZSBmaWxsPSIjQTNBOEQ0IiBjeD0iMTE3Ny42IiBjeT0iMzYyLjUiIHI9IjYxLjkiLz48Y2lyY2xlIGZpbGw9IiNGOUJDNjAiIGN4PSIxMjIzLjUiIGN5PSIxNTEuMSIgcj0iMzIuNSIvPjxwYXRoIGZpbGw9IiNGOUJDNjAiIGQ9Ik0xMTUuNTcgMTY3LjkxbDM5LjExMi0xMC4xMiAxMC4xMiAzOS4xMTEtMzkuMTExIDEwLjEyeiIvPjwvZz48L3N2Zz4="></img>
+                <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTE0MDMuNjI0IDM3MC4yNjhsMTQzLjg1Ni00Mi44NTMgNDIuODUzIDE0My44NTYtMTQzLjg1NiA0Mi44NTN6Ii8+PHBhdGggZmlsbD0iIzdDQzU3QyIgZD0iTTc0Ny45IDgxMS44bDc5LjcgMzQuNiA1LjUtNzguMXoiLz48cGF0aCBmaWxsPSIjRjlCQzYwIiBkPSJNOTMzLjcgMTA2LjlsNzAuMiA5NCA0OS4yLTM2LjggNjUuOCA4Ny45LTEwNS44IDc5LjEtMTM2LTE4MS45eiIvPjwvZz48L3N2Zz4="></img>
+                <img className="absolute" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYzMiIgaGVpZ2h0PSI4NDciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0U4RTRFNiIgZD0iTTEwMTUuMDA1IDYyNS42MmwxNzYuOTItNTIuNzA0IDUyLjcwNCAxNzYuOTItMTc2LjkyIDUyLjcwNHoiLz48cGF0aCBmaWxsPSIjRTdFQUY2IiBkPSJNNDY0LjggMjE5LjdsLTc0LjMgMTQxLjIgMTQyLjMgMjAuNnoiLz48cGF0aCBmaWxsPSIjRThFNEU2IiBkPSJNNjcyLjkyNiA2OS40MjFsMjMyLjctNjkuMzIgNjkuMzE5IDIzMi43LTIzMi43IDY5LjMyeiIvPjwvZz48L3N2Zz4="></img>
+                <img className="relative z-30" src="https://pine.io/static/pine-app-header-0d498817fa121c2506e3b61580d2b31e.svg"></img>
+              </div>
             </div>
           </section>
-          <section className="px-4 mt-24">
+          <section className="px-4 mt-24 sm:mt-64">
             <div className="mt-24 text-center">
-              <h3 className="font-bold leading-relaxed text-3xl">Pine is Everywhere.</h3>
-              <p className="mt-8">
+              <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Pine is Everywhere.</h3>
+              <p className="mt-8 sm:leading-relaxed">
                 Pine is a responsive web app. Use it anywhere with just your browser!
                 <br />
                 Don't like web apps? Don't worry, dedicated apps for Mac, iOS, and Android are coming soon!
@@ -124,7 +126,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </section>
           <section className="px-4 mt-16">
             <div className="mt-16 text-center">
-              <h3 className="font-bold leading-relaxed text-3xl">Write with Pine.</h3>
+              <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Write with Pine.</h3>
               <h5 className="mt-3 opacity-75 leading-tight">Pine notes are simple to use, elegant and powerful.</h5>
             </div>
             <div className="mt-8 text-center">
@@ -154,7 +156,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </section>
           <section className="px-4 mt-16">
             <div className="mt-16 text-center">
-              <h3 className="font-bold leading-relaxed text-3xl">Check off your work with Pine.</h3>
+              <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Check off your work with Pine.</h3>
               <h5 className="mt-3 opacity-75 leading-tight">Your todo list always nearby</h5>
             </div>
             <div className="mt-12 text-center">
@@ -177,7 +179,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </section>
           <section className="px-4 mt-16">
             <div className="text-center">
-              <h3 className="font-bold leading-relaxed text-3xl">Track your Habits with Pine.</h3>
+              <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Track your Habits with Pine.</h3>
               <h5 className="mt-3 opacity-75 leading-tight">Developing new habits can be hard. Pine makes it easy.</h5>
             </div>
             <div className="mt-12 text-center">
@@ -200,7 +202,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </section>
           <section className="px-4 mt-16">
             <div className="text-center">
-              <h3 className="font-bold leading-relaxed text-3xl">Do much more with Pine.</h3>
+              <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Do much more with Pine.</h3>
               <h5 className="mt-3 opacity-75 leading-tight">Organize, bookmark, upload.</h5>
             </div>
             <div className="mt-12 text-center">
@@ -230,7 +232,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </section>
           <section className="px-4 mt-16">
             <div className="text-center">
-              <h3 className="font-bold leading-relaxed text-3xl">Pine is made with Love.</h3>
+              <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Pine is made with Love.</h3>
               <div className="mt-8 flex justify-center">
                 <img className="w-24 h-24 rounded-full" src="https:/pine.io/static/henrikas-kuzmickas-pine-87ec03677c27d7cbcb59fec5bd7986e3.png"></img>
               </div>
