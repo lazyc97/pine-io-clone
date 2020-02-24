@@ -127,110 +127,126 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           <section className="px-4 mt-16">
             <div className="mt-16 text-center">
               <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Write with Pine.</h3>
-              <h5 className="mt-3 opacity-75 leading-tight">Pine notes are simple to use, elegant and powerful.</h5>
+              <h5 className="mt-3 opacity-75 leading-tight sm:leading-tighter sm:text-xl">Pine notes are simple to use, elegant and powerful.</h5>
             </div>
-            <div className="mt-8 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+            <div className="sm:flex sm:flex-col">
+              <div className="mt-8 sm:order-las sm:mt-16t">
+                <div className="text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Simple yet powerful</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Pine Notes are simple enough for quick memos, yet powerful enough to write a novel.</p>
+                </div>
+                <div className="mt-12 text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Version control</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Save a version of your work at any point in time. Never lose it.</p>
+                </div>
+                <div className="mt-12 text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Share your notes</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Pine lets you share your notes with a simple weblink. Get your writing online with a single click, keep it updated automatically.</p>
+                </div>
               </div>
-              <h5 className="mt-4">Simple yet powerful</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Pine Notes are simple enough for quick memos, yet powerful enough to write a novel.</p>
-            </div>
-            <div className="mt-12 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+              <div className="mt-8 flex justify-center">
+                <img className="w-full max-w-1100px" src="https://pine.io/static/pine-writing-note-taking-web-app-feb088b32d959d0d1c5bc91c5d4dd187.png" alt="Pine, note taking web app"></img>
               </div>
-              <h5 className="mt-4">Version control</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Save a version of your work at any point in time. Never lose it.</p>
-            </div>
-            <div className="mt-12 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-              </div>
-              <h5 className="mt-4">Share your notes</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Pine lets you share your notes with a simple weblink. Get your writing online with a single click, keep it updated automatically.</p>
-            </div>
-            <div className="mt-8 flex justify-center">
-              <img className="w-full max-w-1100px" src="https://pine.io/static/pine-writing-note-taking-web-app-feb088b32d959d0d1c5bc91c5d4dd187.png" alt="Pine, note taking web app"></img>
             </div>
           </section>
-          <section className="px-4 mt-16">
+          <section className="px-4 mt-16 sm:mt-48">
             <div className="mt-16 text-center">
               <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Check off your work with Pine.</h3>
-              <h5 className="mt-3 opacity-75 leading-tight">Your todo list always nearby</h5>
+              <h5 className="mt-3 opacity-75 leading-tight sm:leading-tighter sm:text-xl">Your todo list always nearby</h5>
             </div>
-            <div className="mt-12 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            <div className="sm:flex sm:flex-col">
+              <div className="mt-12 sm:mt-16">
+                <div className="text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Pine Todos are everything you hope they'd be.</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Dates, recurrences, colored labels, tags, comments, smart parsing, they have the lot!</p>
+                </div>
+                <div className="mt-8 text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Share your progress</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Keep your friends updated, share your project's to-do list with everyone involved, they'll see the progress live</p>
+                </div>
               </div>
-              <h5 className="mt-4">Pine Todos are everything you hope they'd be.</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Dates, recurrences, colored labels, tags, comments, smart parsing, they have the lot!</p>
-            </div>
-            <div className="mt-8 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+              <div className="mt-8 flex justify-center">
+                <img className="w-full max-w-1100px" src="https://pine.io/static/pine-task-manager-todo-web-app-a3e25bbfef87c48e346ce525218c05de.png" alt="Pine, Task Manager, Todo App"></img>
               </div>
-              <h5 className="mt-4">Share your progress</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Keep your friends updated, share your project's to-do list with everyone involved, they'll see the progress live</p>
-            </div>
-            <div className="mt-8 flex justify-center">
-              <img className="w-full max-w-1100px" src="https://pine.io/static/pine-task-manager-todo-web-app-a3e25bbfef87c48e346ce525218c05de.png" alt="Pine, Task Manager, Todo App"></img>
             </div>
           </section>
-          <section className="px-4 mt-16">
+          <section className="px-4 mt-16 sm:mt-48">
             <div className="text-center">
               <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Track your Habits with Pine.</h3>
-              <h5 className="mt-3 opacity-75 leading-tight">Developing new habits can be hard. Pine makes it easy.</h5>
+              <h5 className="mt-3 opacity-75 leading-tight sm:leading-tighter sm:text-xl">Developing new habits can be hard. Pine makes it easy.</h5>
             </div>
-            <div className="mt-12 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+            <div className="sm:flex sm:flex-col">
+              <div className="mt-12 sm:order-la sm:mt-16st">
+                <div className="text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Like recurring todos on steroids</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Pine Habits track your streaks and other stats, let you leave comments and measure every session.</p>
+                </div>
+                <div className="mt-8 text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Track progress</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Create custom trackers for any habit, measure your progress for anything.</p>
+                </div>
               </div>
-              <h5 className="mt-4">Like recurring todos on steroids</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Pine Habits track your streaks and other stats, let you leave comments and measure every session.</p>
-            </div>
-            <div className="mt-8 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <div className="mt-8 flex justify-center">
+                <img className="w-full max-w-1100px" src="https://pine.io/static/pine-habit-tracker-web-app-01ba6f00d399625a82f5a004f01b0aa4.png" alt="Pine, Habit Tracking web app"></img>
               </div>
-              <h5 className="mt-4">Track progress</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Create custom trackers for any habit, measure your progress for anything.</p>
-            </div>
-            <div className="mt-8 flex justify-center">
-              <img className="w-full max-w-1100px" src="https://pine.io/static/pine-habit-tracker-web-app-01ba6f00d399625a82f5a004f01b0aa4.png" alt="Pine, Habit Tracking web app"></img>
             </div>
           </section>
-          <section className="px-4 mt-16">
+          <section className="px-4 mt-16 sm:mt-48">
             <div className="text-center">
               <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Do much more with Pine.</h3>
-              <h5 className="mt-3 opacity-75 leading-tight">Organize, bookmark, upload.</h5>
+              <h5 className="mt-3 opacity-75 leading-tight sm:leading-tighter sm:text-xl">Organize, bookmark, upload.</h5>
             </div>
-            <div className="mt-12 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+            <div className="sm:flex sm:flex-col">
+              <div className="mt-12 sm:mt-16">
+                <div className="text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Organize in Space and Time</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Use Boards to drag-and-drop your content close together. All your work is recorded in a timeline so that you could see what you did in the past and what you'll need to do today and in the future</p>
+                </div>
+                <div className="mt-8 text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">Bookmark websites</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Keep the links you want to bookmark together with your projects.</p>
+                </div>
+                <div className="mt-8 text-center">
+                  <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
+                    <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
+                  </div>
+                  <h5 className="mt-4 sm:font-medium sm:text-xl">File upload</h5>
+                  <p className="mt-4 opacity-50 leading-relaxed">Upload files, keep them close to your work and preview all media directly in Pine!</p>
+                </div>
               </div>
-              <h5 className="mt-4">Organize in Space and Time</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Use Boards to drag-and-drop your content close together. All your work is recorded in a timeline so that you could see what you did in the past and what you'll need to do today and in the future</p>
-            </div>
-            <div className="mt-8 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              <div className="mt-8 flex justify-center">
+                <img className="w-full max-w-1100px" src="https://pine.io/static/pine-organizer-productivity-web-app-49cab2c03e87fd785eacff66b60c0f18.png" alt="Pine, Organizer, Productivity web app"></img>
               </div>
-              <h5 className="mt-4">Bookmark websites</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Keep the links you want to bookmark together with your projects.</p>
-            </div>
-            <div className="mt-8 text-center">
-              <div className="mx-auto w-8 h-8 flex justify-center items-center rounded-full bg-red-500">
-                <svg className="fill-none text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
-              </div>
-              <h5 className="mt-4">File upload</h5>
-              <p className="mt-4 opacity-50 leading-relaxed">Upload files, keep them close to your work and preview all media directly in Pine!</p>
-            </div>
-            <div className="mt-8 flex justify-center">
-              <img className="w-full max-w-1100px" src="https://pine.io/static/pine-organizer-productivity-web-app-49cab2c03e87fd785eacff66b60c0f18.png" alt="Pine, Organizer, Productivity web app"></img>
             </div>
           </section>
-          <section className="px-4 mt-16">
+          <section className="px-4 mt-16 sm:mt-48">
             <div className="text-center">
               <h3 className="font-bold leading-relaxed text-3xl sm:text-2.5rem">Pine is made with Love.</h3>
               <div className="mt-8 flex justify-center">
