@@ -21,6 +21,7 @@ module.exports = {
       },
       height: {
         'screen-4/5': '80vh',
+        'screen-9/10': '90vh',
       },
       fontSize: {
         '2rem': '2rem',
@@ -33,6 +34,8 @@ module.exports = {
       },
       translate: {
         '-p84': '-84%',
+        '-p3': '-3%',
+        'p8': '8%',
       }
     },
   },
