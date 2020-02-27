@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
     extend: {
+      inset: {
+        '1/2': '50%',
+      },
       borderRadius: {
         '2xl': '2rem',
       },
