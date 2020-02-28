@@ -78,7 +78,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             </div>
           </div>
         </header>
-        <main className="pb-20 lg:pb-0 lg:flex lg:flex-col font-sans">
+        <main className="pb-20 sm:pb-0 lg:flex lg:flex-col font-sans">
           <section className="pt-24 sm:pt-0 h-screen-9/10 sm:h-screen-4/5 lg:h-screen-9/10 w-screen lg:flex lg:flex-col bg-teal-900">
             <div className="h-full w-full lg:max-w-6xl lg:self-center">
               <div className="h-full sm:ml-4 sm:flex sm:items-center">
@@ -271,7 +271,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
                 </p>
             </div>
           </section>
-          <section className="mt-24 sm:flex sm:justify-center z-20">
+          <section id="signup" className="pt-24 sm:flex relative sm:justify-center z-20">
             <div className="px-4 sm:px-8 sm:py-12 sm:max-w-lg bg-white sm:shadow-2xl sm:rounded-2xl">
               <div>
                 <h3 className="text-center font-bold leading-relaxed text-3xl sm:text-2.5rem">Sign up Today!</h3>
@@ -306,7 +306,8 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           </section>
           <div className="hidden sm:block relative">
             <img className="absolute bottom-0 z-10" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIyMDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMjcuMjU1QzIwMC42NTEtMjQuNiA1MzIuMTc3LTIuNDYgOTk0LjU3OCA5My42NzFjNDYyLjQwMSA5Ni4xMzMgNzcwLjg3NSA5OC43MjggOTI1LjQyMiA3Ljc4NlYyMDhIMFYyNy4yNTV6IiBmaWxsPSIjMWMyNDJiIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4K"></img>
-            <img className="max-w-3xl absolute bottom-0 left-1/2 z-0" src="https://pine.io/static/pine-app-footer-6dfb2a79cf4da639c8d93d2153f3313a.svg"></img>
+            <img className="max-w-3xl hidden lg:block absolute bottom-0 left-46% z-0" src="https://pine.io/static/pine-app-footer-6dfb2a79cf4da639c8d93d2153f3313a.svg"></img>
+            <img className="max-w-3xl hidden lg:block absolute bottom-24 -left-9% z-0" src="https://pine.io/static/pine-app-footer-2-e571ceb73cbeff223b59115c420b10a3.svg"></img>
           </div>
         </main>
         <footer className="px-12 pt-8 pb-16 lg:pt-16 lg:pb-32 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 bg-gray-900 text-white">

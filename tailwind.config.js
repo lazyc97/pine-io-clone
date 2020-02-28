@@ -2,7 +2,9 @@ module.exports = {
   theme: {
     extend: {
       inset: {
-        '1/2': '50%',
+        '-9%': '-9%',
+        '46%': '46%',
+        '24': '6rem',
       },
       borderRadius: {
         '2xl': '2rem',
